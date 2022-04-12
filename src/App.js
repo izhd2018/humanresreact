@@ -167,7 +167,7 @@ function App() {
       canvasRef.current.height = videoHeight;
 
       const face = await net.estimateFaces({ input: video });
-      if (face.length == 0) {
+      if (face.length === 0) {
         awayCount++;
       }
       else {
